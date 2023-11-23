@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unattend xmlns="urn:schemas-microsoft-com:unattend">
+    <settings pass="oobeSystem">
+        <component name="Microsoft-Windows-International-Core" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <InputLocale>0409:00020409</InputLocale>
+            <SystemLocale>en-US</SystemLocale>
+            <UILanguage>en-US</UILanguage>
+            <UILanguageFallback>en-US</UILanguageFallback>
+            <UserLocale>en-US</UserLocale>
+        </component>
+        <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <OOBE>
+                <VMModeOptimizations>
+                    <SkipAdministratorProfileRemoval>true</SkipAdministratorProfileRemoval>
+                    <SkipNotifyUILanguageChange>true</SkipNotifyUILanguageChange>
+                </VMModeOptimizations>
+                <HideEULAPage>true</HideEULAPage>
+                <HideLocalAccountScreen>true</HideLocalAccountScreen>
+                <HideOEMRegistrationScreen>true</HideOEMRegistrationScreen>
+                <HideOnlineAccountScreens>true</HideOnlineAccountScreens>
+                <HideWirelessSetupInOOBE>true</HideWirelessSetupInOOBE>
+                <ProtectYourPC>3</ProtectYourPC>
+            </OOBE>
+            <Themes>
+                <DefaultThemesOff>false</DefaultThemesOff>
+                <SystemUsesLightTheme>false</SystemUsesLightTheme>
+                <ThemeName>Company Dark</ThemeName>
+                <UWPAppsUseLightTheme>false</UWPAppsUseLightTheme>
+                <WindowColor>0xff1b1b1b</WindowColor>
+            </Themes>
+        </component>
+    </settings>
+    <cpi:offlineImage cpi:source="wim:d:/22h2/22h2_multilangwim/22h2_enterprise.wim#Windows 10 Enterprise" xmlns:cpi="urn:schemas-microsoft-com:cpi" />
+</unattend>
